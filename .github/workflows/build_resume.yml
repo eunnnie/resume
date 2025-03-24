@@ -27,7 +27,7 @@ jobs:
           pandoc resume_eunlim.md -o resume_eunlim.pdf --pdf-engine=xelatex
 
       - name: Upload PDF
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Resume PDF
           path: resume_eunlim.pdf
